@@ -140,3 +140,24 @@ body {
 .slider input:nth-of-type(1):checked ~ .slider__caption .slider__caption-list {
   transform: translateX(calc(-5 * var(--slider-size)));
 }
+
+@media (hover: hover) {
+  .custom-radio:hover .custom-radio__inner {
+    background-color: var(--color-text);
+    border-color: var(--color-text);
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider__caption {
+    flex-basis: 100%;
+    margin-right: 0;
+    height: 3rem;
+    margin-bottom: -7rem;
+  }
+}
