@@ -94,7 +94,7 @@ body {
 .custom-radio__inner {
   width: 0.5em;
   height: 0.5em;
-  border: 1px solid var(--color-controls);
+  border: 0.125rem solid var(--color-controls);
   border-radius: 50%;
   background-color: var(--color-controls);
   transition: 0.2s;
@@ -112,6 +112,10 @@ body {
   background-color: transparent;
 }
 
+.slider input:checked + .custom-radio:active {
+  background-color: transparent;
+  transform: none;
+}
 
 /* slide 3 */
 .slider input:nth-of-type(4):checked ~ .slider__content .slider__content-list,
